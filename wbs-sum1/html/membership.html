@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Wellington Botanical Society</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Open+Sans&family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+
+<body>
+  
+  
+  
+
+
+
+  
+    <header class="header">
+        
+        <nav class="header-nav">
+                
+            <a href="../html/index.html"><img class="header-nav__logo" src="../img/icons/wbs-my-logo.svg" alt="logo"></a>
+                
+                
+            <ul class="header-nav__ul">
+                <a href="../html/index.html"><li class="header-nav__li">Home</li></a>
+                <a href="../html/about.html"><li class="header-nav__li">About</li></a>
+                <a href="../html/events.html"><li class="header-nav__li">Events</li></a>
+                <a href="../html/awards.html"><li class="header-nav__li">Awards</li></a>
+                <a href="../html/resources.html"><li class="header-nav__li">Resources</li></a>
+                <a href="../html/contact.html"><li class="header-nav__li">Contact</li></a>
+            </ul>
+        
+            <a href="../html/membership.html"><button class="membership-btn">Memberships</button></a>            
+
+        <img class="hamburger" id="hamburger" src="../img/icons/hamburger.svg" alt="hamburger">        
+        
+        </nav>    
+
+                
+
+
+        <div id="nav-mobile" class="nav-mobile" style="display:none">
+            <ul class="nav-mobile__ul">
+                <a href="../html/index.html"><li class="nav-mobile__li">Home</li></a>
+                <a href="../html/about.html"><li class="nav-mobile__li">About</li></a>
+                <a href="../html/events.html"><li class="nav-mobile__li">Events</li></a>
+                <a href="../html/awards.html"><li class="nav-mobile__li">Awards</li></a>
+                <a href="../html/resources.html"><li class="nav-mobile__li">Resources</li></a>
+                <a href="../html/contact.html"><li class="nav-mobile__li">Contact</li></a>
+                <a href="../html/membership.html"><li class="nav-mobile__li">Memberships</li></a>
+            </ul>
+        </div>
+            
+            
+    </header>
+
+    <section class="membership-intro">
+        <h1 class="membership-intro__header">Membership</h1>
+    </section>
+
+
+
+
+    <section class="membership-welcome__container">
+       
+        
+        <div class="membership-welcome__info">
+            <h1 class="membership-welcome__header">Join the community!</h1>
+            <p class="membership-welcome__paragraph">Joining the Wellington Botanical Society allows you to be in contact with likeminded individuals who are passionate about Botany and also about conserving New Zealand flora. Not only will you be supporting the community with your membership, you will also join us on multiple field trips, and a yearly week long botanical camp is avaliable to members.</p>
+            <p class="membership-welcome__signup">Sign up below!</p>
+            <!-- <a href="#membership-form__container"><img src="../img/icons/arrow.png" alt="arrow" class="membership-arrow"></a> -->
+        </div>
+
+
+        <div class="membership-welcome__photo">
+            <div class="membership-welcome__pic"></div>
+        </div>
+    
+    </section>
+
+
+
+
+    <section class="membership-break"></section>
+
+
+
+
+
+    <section id="membership-form__container" class="membership-form__container">
+        
+        
+        <div class="membership-form__left">
+            <input type="text" class="membership-form__left-title" placeholder="Mr/Mrs/Ms/Miss/Master/Dr...">
+            <input type="text" class="membership-form__left-title" placeholder="Full Name...">
+            <input type="text" class="membership-form__left-title" placeholder="Address...">
+            <input type="text" class="membership-form__left-title" placeholder="Email...">
+            <input type="text" class="membership-form__left-title" placeholder="Phone...">
+            
+            <p class="membership-form__left-text">What type of membership would you like to sign up for?</p>
+
+            <div class="input-membership">
+                <input type="radio" id="ordinary" name="membership-type" value="Ordinary Membership" class="membership-form__left-radio">
+                <label for="ordinary">Ordinary Membership ... $35 per year</label>
+            </div> 
+            <div class="input-membership"> 
+                <input type="radio" id="country" name="membership-type" value="Country Membership" class="membership-form__left-radio">
+                <label for="country">Country Membership ... $30 per year</label>
+            </div>
+            <div class="input-membership">   
+                <input type="radio" id="student" name="membership-type" value="Student Membership" class="membership-form__left-radio">
+                <label for="student">Student Membership ... $10 per year</label>
+            </div>    
+            <div class="input-membership"> 
+                <input type="radio" id="family" name="membership-type" value="Family Membership" class="membership-form__left-radio">
+                <label for="family">Group / Family Membership ... $40 per year</label>
+            </div>  
+            <div class="input-membership">  
+                <input type="file" class="upload-id" id="upload-id">
+                <label for="upload-id">Upload Proof of Identification</label>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="membership-form__right">
+            <div class="form-right__info">
+                <h1 class="form-right__header">Sign up and become a member</h1>
+                <p class="form-right__paragraph">
+                    Come to member only meetings, join us for field trips, get speial newsletters, and more.
+                </p>
+            </div>
+            <div class="form-right__photo">
+                <div class="form-right__pic"></div>
+            </div>
+        </div>
+    
+    
+    
+    </section>
+
+
+
+
+
+
+
+    <section class="footer-section">
+        <footer class="footer">
+
+            <div class="footer-left">
+                <div class="footer-email">
+                    <p class="footer-email__paragraph">
+                        <img class="contact-semiotic" src="../img/icons/email.png" alt="email-logo">
+                        wellingtonbotsocsecretary@gmail.com
+                    </p>
+                </div>
+
+                <br>
+
+                <div class="footer-pobox">
+                    <p class="pobox">
+                        PO Box 10-412<br>
+                        Wellington 6143<br>
+                        New Zealand<br>
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="footer-right">
+                <nav class="footer-nav">
+
+                    <a href="index.html"><img class="footer-right__logo" src="../img/icons/wbs-my-logo-white.svg" alt="wbs-logo"></a>
+        
+                    <br>
+                    
+                        <ul class="footer-nav__list">
+                            <a href="index.html"><li class="footer-nav__list-items">Home</li></a>
+        
+                            <a href="about.html"><li class="footer-nav__list-items">About</li></a>
+        
+                            <a href="events.html"><li class="footer-nav__list-items">Events</li></a>
+        
+                            <a href="awards.html"><li class="footer-nav__list-items">Awards</li></a>
+        
+                            <a href="resources.html"><li class="footer-nav__list-items">Resources</li></a>
+
+                            <a href="contact.html"><li class="footer-nav__list-items">Contact</li></a>
+
+                            <a href="membership.html"><li class="footer-nav__list-items">Memberships</li></a>
+                        </ul>
+                    </nav>
+            </div>
+
+
+        </footer>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+
+
+
+</html>

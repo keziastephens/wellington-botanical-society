@@ -1,0 +1,21 @@
+@import "resets";
+@import "var";
+@import "nav";
+@import "mixins";
+@import "index";
+@import "footer";
+@import "contact";
+@import "events";
+@import "resources";
+@import "awards";
+@import "about";
+@import "membership";
+
+h1{
+    @include header-style;
+    color: $main-heading;
+}
+p{
+    @include paragraph-style;
+    
+}

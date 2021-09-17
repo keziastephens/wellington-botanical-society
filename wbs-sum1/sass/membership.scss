@@ -1,0 +1,183 @@
+.membership-intro{
+    height: 30vh;
+    width: 100vw;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &__header{
+        font-size: 5rem;
+        font-family: 'Cinzel';
+        color: white;
+    }
+}
+
+@media #{$mobile}{
+    .membership-intro{
+        height: 20vh;
+
+        &__header{
+            font-size: 3rem;
+        }
+    }
+    
+}
+
+@media #{$tablet}{
+    .membership-intro{
+        height: 25vh;
+
+        &__header{
+            font-size: 4rem;
+        }
+    }
+    
+}
+
+.membership-welcome__container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+
+    .membership-welcome__info{
+        height: 100%;
+        width: 50%;
+        background: orchid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .membership-welcome__header{
+        font-size: 4rem;
+        font-family: 'Cinzel';
+        width: 50%;
+        text-align: center;
+    }
+
+    .membership-welcome__paragraph{
+        font-size: 1.5rem;
+        font-family: 'Open sans', 'sans-serif';
+        width: 60%;
+        padding-top: 2rem;
+    }
+
+    .membership-welcome__signup{
+        font-size: 1.5rem;
+        font-family: 'Open sans', 'sans-serif';
+
+    }
+
+    .membership-arrow{
+        height: 20%;
+    }
+
+
+
+
+
+    .membership-welcome__photo{
+        height: 100%;
+        width: 50%;
+        background: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .membership-welcome__pic{
+            height: 80%;
+            width: 80%;
+            background: crimson;
+        }
+    }
+}
+
+
+.membership-break{
+    height: 40vh;
+    width: 100vw;
+    background: yellow;
+}
+
+
+.membership-form__container{
+    height: 200vh;
+    width: 100vw;
+    background: green;
+    display: flex;
+
+
+    .membership-form__right{
+        height: 100%;
+        width: 40%;
+        background: powderblue;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .form-right__info{
+            height: 35%;
+            width: 100%;
+            background: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            .form-right__header{
+                font-size: 4rem;
+                font-family: 'Cinzel';
+                width: 80%;
+            }
+
+            .form-right__paragraph{
+                font-size: 1.5rem;
+                font-family: 'Open sans', 'sans-serif';
+                width: 50%;
+                padding-top: 3rem;
+            }
+        
+        }
+
+
+        .form-right__photo{
+            height: 65%;
+            width: 100%;
+            background: orange;
+
+
+        }
+
+
+    }
+}
+
+.membership-form__left{
+    height: 100%;
+    width: 60%;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    
+    .membership-form__left-title{
+        height: 2rem;
+        width: 25rem;
+    }
+
+
+}
+
+
+.input-membership{
+
+}

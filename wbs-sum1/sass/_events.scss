@@ -1,0 +1,175 @@
+.events-intro{
+    min-height: 30vh;
+    width: 100vw;
+    background: url(../img/overlay/waterfall-overlay.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -40rem;
+    
+    &__header{
+        font-size: 5rem;
+        font-family: 'Cinzel';
+        color: white;
+    }
+
+    @media #{$mobile}{
+        .events-intro{
+            height: 20vh;
+
+            &__header{
+                font-size: 3rem;
+            }
+        }
+
+    }
+        
+    @media #{$tablet}{
+        .events-intro{
+            height: 25vh;
+
+            &__header{
+                    font-size: 4rem;
+            }
+        }
+            
+    }
+ 
+}
+
+
+
+
+
+
+.events-meetings{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
+
+
+    &__nxt{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__nxt-pic{
+        height: 80%;
+        width: 80%;
+        background: url(../img/wheat.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+}
+
+@media #{$mobile}{
+    .events-meetings{
+        height: 120vh;
+    
+        &__nxt{
+            height: 50%;
+            width: 100%;
+        }
+        &__nxt-pic{
+            height: 95%;
+            width: 95%;
+        }
+    }
+
+}
+@media #{$tablet}{
+    .events-meetings{
+        height: 120vh;
+    
+        &__nxt{
+            height: 50%;
+            width: 100%;
+        }
+        &__nxt-pic{
+            height: 95%;
+            width: 95%;
+        }
+    }
+
+}
+
+.next-meeting__overlay{
+    min-height: 80%;
+    width: 80%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white
+
+}
+    .next-meeting__overlay-h2{
+        @include header-style;
+        width: 70%;
+    
+    }    
+
+
+    .next-meeting__overlay-p1{
+        padding: 5rem;
+        font-size: 2rem;
+    }
+
+    .next-meeting__overlay-p2{
+        width: 80%;
+    }
+
+    @media #{$mobile}{
+        .next-meeting__overlay{
+            height: 90%;
+            width: 90%;
+        }
+        .next-meeting__overlay-h2{
+            font-size: 3rem !important;
+        }
+
+        .next-meeting__overlay-p1{
+            font-size: 1.5rem !important;
+            padding: 1rem;
+        }
+
+        .next-meeting__overlay-p2{
+            font-size: 1rem !important;
+        }
+    }
+
+    @media #{$tablet}{
+        .next-meeting__overlay{
+            height: 90%;
+            width: 90%;
+        }
+        .next-meeting__overlay-h2{
+            font-size: 3rem !important;
+        }
+
+        .next-meeting__overlay-p1{
+            font-size: 1.5rem !important;
+            padding: 2rem;
+        }
+
+        .next-meeting__overlay-p2{
+            font-size: 1rem !important;
+        }
+    }

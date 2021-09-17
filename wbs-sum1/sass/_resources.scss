@@ -1,0 +1,261 @@
+.resources-intro{
+    height: 30vh;
+    width: 100vw;
+    background: url(../img/overlay/books-overlay.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    
+    &__header{
+        font-size: 5rem;
+        font-family: 'Cinzel';
+        color: white;
+    }
+}
+@media #{$mobile}{
+    .resources-intro{
+        height: 20vh;
+
+        &__header{
+            font-size: 3rem;
+        }
+    }
+    
+}
+
+@media #{$tablet}{
+    .resources-intro{
+        height: 25vh;
+
+        &__header{
+            font-size: 4rem;
+        }
+    }
+    
+}
+
+.newsletter-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+
+    .newsletter-info{
+        height: 100%;
+        width: 50%;
+        // background: purple;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .newsletter-info__header{
+        font-family: 'Cinzel', serif;
+        font-size: 4rem;  
+        padding: 2rem;
+    }
+
+    .newsletter-info__paragraph{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 4rem;
+
+    }
+
+
+
+    .newsletter-btn{
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: none;
+        background: grey;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    .newsletter-btn:hover{
+        background: black;
+        transition: 0.2s all ease;
+    }
+
+
+    .newsletter-photo{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .newsletter-pic{
+            height: 80%;
+            width: 80%;
+            background: yellow;
+
+        }
+    }
+}
+
+
+
+
+
+.publications-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+    .publications-photo{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .publications-photo__pic{
+            height: 80%;
+            width: 80%;
+            background: yellowgreen;
+        }   
+    }
+
+
+
+    .publications-info{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;       
+        
+
+        .publications-info__header{
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;  
+            padding: 2rem;
+        }
+    
+        .publications-info__paragraph{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.5rem;
+            width: 50%;
+            text-align: center;
+            padding-bottom: 4rem;
+    
+        }
+    
+    
+    
+        .publications-btn{
+            font-family: 'Open Sans', sans-serif;
+            text-transform: uppercase;
+            font-size: 2rem;
+            padding: 1rem;
+            border-radius: 2rem;
+            border: none;
+            background: grey;
+            color: white;
+            cursor: pointer;
+        }
+
+
+        .publications-btn:hover{
+            background: black;
+            transition: 0.2s all ease;
+        }
+    
+    
+    
+    
+    }
+
+
+}
+
+
+
+.identification-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .identification-header{
+        font-family: 'Cinzel', serif;
+        font-size: 4rem;
+    }
+
+    .identification-info{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+        width: 40%;
+        text-align: center; 
+    }
+
+    .identification-file{
+        border: 1px solid black;
+        margin: 2rem;
+        text-align: center;
+        width: 30%;
+        // padding:2rem;
+    }
+    input[type=file]{
+        padding: 1rem;
+        font-size: 1.5rem;
+       
+    }
+
+    
+
+    .identification-email{
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+        width: 30%;
+        padding: 0.5rem;
+        height: 4rem;
+        width: 28.4rem;
+
+    }
+
+    .identification-textarea{
+        margin-top: 2rem;
+        height: 20%;
+        resize: none;
+        width: 40rem;
+
+    }
+
+    .identification-submit{
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: none;
+        background: grey;
+        color: white;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+
+    .identification-submit:hover{
+        background: black;
+        transition: 0.2s all ease;
+    }
+
+}

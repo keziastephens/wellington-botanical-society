@@ -1,0 +1,268 @@
+.awards-intro{
+    height: 30vh;
+    width: 100vw;
+    background: url(../img/overlay/awards-overlay.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &__header{
+        font-size: 5rem;
+        font-family: 'Cinzel';
+        color: white;
+    }
+}
+
+@media #{$mobile}{
+    .awards-intro{
+        height: 20vh;
+
+        &__header{
+            font-size: 3rem;
+        }
+    }
+    
+}
+
+@media #{$tablet}{
+    .awards-intro{
+        height: 25vh;
+
+        &__header{
+            font-size: 4rem;
+        }
+    }
+    
+}
+
+
+
+.jubilee-section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+    .jubilee-pic{
+        height: 100%;
+        width: 50%;
+        background: darkmagenta;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .jubilee-pic__photo{
+        height: 80%;
+        width: 70%;
+        background: url(../img/jubilee.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    
+    .jubilee-info{
+        height: 100%;
+        width: 50%;
+        background: darksalmon;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    
+    .jubilee-info__header{
+        font-size: 4rem;
+        font-family: 'Cinzel';    
+        width: 60%;
+    }
+
+    
+    .jubilee-info__paragraph{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+        width: 50%;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+
+    .jubilee-info__btn{
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: none;
+        background: grey;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    
+    .jubilee-info__btn:hover{
+        background: black;
+        transition: 0.2s all ease;
+    }
+
+
+}
+
+
+
+.bryology-section{
+    height: 100vh;
+    width: 100vw;
+    background: darkcyan;
+    display: flex;
+
+
+    .bryology-info{
+        height: 100%;
+        width: 50%;
+        background: rgb(179, 52, 10);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bryology-pic{
+        height: 100%;
+        width: 50%;
+        background: hotpink;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .bryology-pic__photo{
+        height: 80%;
+        width: 70%;
+        background: chartreuse;
+
+    }
+    
+    .bryology-info__header{
+        font-size: 4rem;
+        font-family: 'Cinzel';    
+        width: 60%;
+    }
+
+    
+    .bryology-info__paragraph{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+        width: 50%;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .bryology-info__btn{
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: none;
+        background: grey;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    
+    .bryology-info__btn:hover{
+        background: black;
+        transition: 0.2s all ease;
+    }
+
+}
+
+
+
+.allanmere-section{
+    height: 100vh;
+    width: 100vw;
+    background: darkmagenta;
+    display: flex; 
+    
+    .allanmere-pic{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .allenmere-pic__photo{
+        height: 80%;
+        width: 70%;
+        background: url(../img/allanmereaward.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    
+    .allanmere-info{
+        height: 100%;
+        width: 50%;
+        background: rgb(90, 11, 51);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .allanmere-info__header{
+        font-size: 4rem;
+        font-family: 'Cinzel';
+        width: 60%;    
+    
+    }
+
+    .allanmere-info__paragraph{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+        width: 50%;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+
+    .allanmere-info__btn{
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: none;
+        background: grey;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    
+    .allanmere-info__btn:hover{
+        background: black;
+        transition: 0.2s all ease;
+    }
+}
+
+

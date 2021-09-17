@@ -1,0 +1,168 @@
+.header{
+    min-height: 10vh;
+    width: 100vw;
+
+    
+
+    &-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+
+    &-nav__logo{
+        height: 9vh;
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+
+    &-nav__ul{
+        display: flex;
+        list-style: none;
+
+    }
+
+    &-nav__li{
+        padding: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2rem;
+
+    }
+
+
+    .nav-mobile{
+        // is not applying style in the document flow, can't find issue so have
+        // applied the display none to inline styling on html
+        display: none; 
+        width: 100vw;
+        height: 90vh;
+        background: url(../img/overlay/cute-plant-overlay.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+    
+    
+        &__ul{
+            font-size: 2rem;    
+            list-style: none;
+    
+        }
+    
+        &__li{
+            padding: 1rem; 
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 0.1rem;
+            color: white;       
+        }
+    }
+
+    // @media #{$mobile}{
+    //     min-height:10vh ;
+    // }
+    
+    
+
+}
+
+
+.membership-btn{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    background: grey;
+    border: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1rem;
+    margin-right: 2.5vh;
+
+    .membership-btn:hover{
+        background: black;
+        transition: 0.2s all ease;
+    }
+    
+}
+
+
+// .nav-mobile{
+//     display: none; 
+//     width: 100vw;
+//     height: 90vh;
+//     background: url(../img/overlay/cute-plant-overlay.png);
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     z-index: 5;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+
+
+
+//     &__ul{
+//         font-size: 2rem;    
+//         list-style: none;
+
+//     }
+
+//     &__li{
+//         padding: 1rem; 
+//         font-family: 'Open Sans', sans-serif;
+//         letter-spacing: 0.1rem;
+//         color: white;       
+//     }
+// }
+
+.hamburger{
+    height: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media #{$mobile}{
+    
+    .header-nav__ul{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .membership-btn{
+        display: none !important;
+    }
+
+
+}
+
+@media #{$tablet}{
+    
+    .header-nav__ul{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .membership-btn{
+        display: none;
+    }
+
+
+}
+

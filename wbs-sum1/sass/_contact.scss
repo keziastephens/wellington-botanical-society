@@ -1,0 +1,143 @@
+.contact-intro{
+    height: 30vh;
+    width: 100vw;
+    background: url(../img/overlay/contact-overlay.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &__header{
+        font-size: 5rem;
+        font-family: 'Cinzel';
+        color: white;
+    }
+}
+
+@media #{$mobile}{
+    .contact-intro{
+        height: 20vh;
+
+        &__header{
+            font-size: 3rem;
+        }
+    }
+    
+}
+
+@media #{$tablet}{
+    .contact-intro{
+        height: 25vh;
+
+        &__header{
+            font-size: 4rem;
+        }
+    }
+    
+}
+
+.contact-container{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+
+
+    &__text{
+        height: 100%;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    &__header{
+        font-size: 5rem;
+        font-family: 'Cinzel';    
+
+    }
+
+    &__paragraph{
+        font-size: 2rem;
+        font-family: 'Open sans', 'sans-serif';
+    }
+    
+    &__form{
+        height: 100%;
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        font-family: 'Open sans', 'sans-serif';
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-form{
+    padding: 0.5rem;
+    height: 4rem;
+    width: 50rem;
+    
+    &__message{
+        font-family: 'Open sans', 'sans-serif';
+        padding: 0.5rem;
+        
+    }
+
+    &__button{
+        @include button-web;
+        margin-top: 2rem;
+
+
+    }
+
+    &__button:hover{
+        background: black;
+        transition: 0.2s all ease;
+    }
+
+
+    &__message{
+        width: 100%;
+        height: 25rem;
+        resize: none;
+    }
+
+}
+
+
+
+.contact-container__div{
+    padding: 1rem 0;
+
+}
+
+::placeholder{
+    font-size: 1.2rem;
+}
+
+
+
