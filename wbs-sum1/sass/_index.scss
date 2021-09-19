@@ -173,7 +173,7 @@
     .welcome{
         display: flex;
         flex-wrap: wrap-reverse;
-        height: 70vh;
+        height: 50vh;
 
         &-container{
             display: none;
@@ -190,12 +190,12 @@
 @media #{$tablet}{
     .welcome{
 
+        height: 80vh;
         display: flex;
         flex-wrap: wrap-reverse;
  
         &-container{
-            height: 25%;
-            width: 100vw;
+            display: none;
         }
 
         &-container__pic{
@@ -229,6 +229,8 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover
 
 
 
@@ -238,14 +240,17 @@
         .welcome-container__two{
             height: 100%;
             width: 100%;
+            background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../img/greenery.jpeg");
         }
     }
 
 
     @media #{$tablet}{
         .welcome-container__two{
-            height: 75%;
+            height: 100%;
             width: 100%;
+            
+            background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../img/greenery.jpeg");
         }
     }
 
@@ -340,8 +345,6 @@
             grid-template-rows: repeat(6, 1fr);
         }
     }
-
-
 
 
 

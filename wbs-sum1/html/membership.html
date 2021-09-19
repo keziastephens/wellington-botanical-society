@@ -99,33 +99,77 @@
         
         
         <div class="membership-form__left">
-            <input type="text" class="membership-form__left-title" placeholder="Mr/Mrs/Ms/Miss/Master/Dr...">
-            <input type="text" class="membership-form__left-title" placeholder="Full Name...">
-            <input type="text" class="membership-form__left-title" placeholder="Address...">
-            <input type="text" class="membership-form__left-title" placeholder="Email...">
-            <input type="text" class="membership-form__left-title" placeholder="Phone...">
-            
-            <p class="membership-form__left-text">What type of membership would you like to sign up for?</p>
+            <div class="membership-form__container-fillin">
+                <input type="text" class="membership-form__left-title" placeholder="Mr/Mrs/Ms/Miss/Master/Dr...">
+                <input type="text" class="membership-form__left-title" placeholder="Full Name...">
+                <input type="text" class="membership-form__left-title" placeholder="Address...">
+                <input type="text" class="membership-form__left-title" placeholder="Email...">
+                <input type="text" class="membership-form__left-title" placeholder="Phone...">
+                
+                <p class="membership-form__left-text">What type of membership would you like to sign up for?</p>
 
-            <div class="input-membership">
-                <input type="radio" id="ordinary" name="membership-type" value="Ordinary Membership" class="membership-form__left-radio">
-                <label for="ordinary">Ordinary Membership ... $35 per year</label>
-            </div> 
-            <div class="input-membership"> 
-                <input type="radio" id="country" name="membership-type" value="Country Membership" class="membership-form__left-radio">
-                <label for="country">Country Membership ... $30 per year</label>
-            </div>
-            <div class="input-membership">   
-                <input type="radio" id="student" name="membership-type" value="Student Membership" class="membership-form__left-radio">
-                <label for="student">Student Membership ... $10 per year</label>
-            </div>    
-            <div class="input-membership"> 
-                <input type="radio" id="family" name="membership-type" value="Family Membership" class="membership-form__left-radio">
-                <label for="family">Group / Family Membership ... $40 per year</label>
-            </div>  
-            <div class="input-membership">  
-                <input type="file" class="upload-id" id="upload-id">
-                <label for="upload-id">Upload Proof of Identification</label>
+                <div class="input-membership">
+                    <input type="radio" id="ordinary" name="membership-type" value="Ordinary Membership" class="membership-form__left-radio">
+                    <label for="ordinary">Ordinary Membership ... $35 per year</label>
+                </div> 
+                <div class="input-membership"> 
+                    <input type="radio" id="country" name="membership-type" value="Country Membership" class="membership-form__left-radio">
+                    <label for="country">Country Membership ... $30 per year</label>
+                </div>
+                <div class="input-membership">   
+                    <input type="radio" id="student" name="membership-type" value="Student Membership" class="membership-form__left-radio">
+                    <label for="student">Student Membership ... $10 per year</label>
+                </div>    
+                <div class="input-membership"> 
+                    <input type="radio" id="family" name="membership-type" value="Family Membership" class="membership-form__left-radio">
+                    <label for="family">Group / Family Membership ... $40 per year</label>
+                </div> 
+
+                <div class="input-membership__id">
+                    <label for="upload-id">Upload Proof of Identification:</label>  
+                    <input type="file" class="upload-id" id="upload-id">
+                </div>
+                
+
+
+                <div class="payment">
+                    
+                    <div class="payment-icons">
+
+                        <img class="payment-icons__img" src="../img/payment/visa.jpg" alt="visa-logo">
+                        <img class="payment-icons__img" src="../img/payment/mastercard.png" alt="mastercard-logo">
+                        <img class="payment-icons__img" src="../img/payment/westpac.png" alt="westpac-logo">
+                        <img class="payment-icons__img" src="../img/payment/paypal.jpg" alt="paypal-logo">
+                    
+                    </div>
+
+
+
+                    <div class="payment-details">
+
+                        <input type="text" class="payment-details__one" placeholder="Name on card">
+                        <input type="text" class="payment-details__two" placeholder="Card number">
+                    </div>    
+                        
+                    <div class="payment-details__div-two">   
+                        <input type="text" class="payment-details__three" placeholder="Expiry date">
+                        <input type="text" class="payment-details__four" placeholder="Security Date">
+
+                    </div>
+
+                </div>
+
+                <div class="input-membership">
+                    <input type="checkbox" class="deets">
+                    <label for="terms">I agree to the terms of service</label>
+                </div>
+
+                <div class="input-membership">
+                    <input type="checkbox" class="deets-two">
+                    <label for="recieve">Are you happy to recieve newsletters via email?</label>
+                </div>
+
+                <button class="membership-submit">submit</button>
             </div>
         </div>
         
@@ -138,7 +182,7 @@
             <div class="form-right__info">
                 <h1 class="form-right__header">Sign up and become a member</h1>
                 <p class="form-right__paragraph">
-                    Come to member only meetings, join us for field trips, get speial newsletters, and more.
+                    Come to member only meetings, join us for field trips, get special newsletters, and more. To learn more about the memberships we offer, check our FAQ's on the about page.
                 </p>
             </div>
             <div class="form-right__photo">

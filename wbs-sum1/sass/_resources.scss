@@ -39,7 +39,7 @@
 }
 
 .newsletter-container{
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
 
@@ -101,7 +101,10 @@
         .newsletter-pic{
             height: 80%;
             width: 80%;
-            background: yellow;
+            background: url(../img/mshroom.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
 
         }
     }
@@ -112,7 +115,7 @@
 
 
 .publications-container{
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
 
@@ -126,7 +129,10 @@
         .publications-photo__pic{
             height: 80%;
             width: 80%;
-            background: yellowgreen;
+            background: url(../img/bulliten.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
         }   
     }
 

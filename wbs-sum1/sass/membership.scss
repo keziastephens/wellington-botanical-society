@@ -39,15 +39,15 @@
 }
 
 .membership-welcome__container{
-    height: 100vh;
+    height: 70vh;
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;
 
 
     .membership-welcome__info{
         height: 100%;
         width: 50%;
-        background: orchid;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -80,14 +80,9 @@
         height: 20%;
     }
 
-
-
-
-
     .membership-welcome__photo{
         height: 100%;
         width: 50%;
-        background: orange;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -96,38 +91,72 @@
         .membership-welcome__pic{
             height: 80%;
             width: 80%;
-            background: crimson;
+            background: url(../img/hiking-people__two.jpeg);
+            background-position: center;
+            background-size: cover;
         }
     }
 }
 
 
+@media #{$mobile}{
+
+    .membership-welcome__container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .membership-welcome__info{
+        height: 70%;
+        width: 100%;
+    }
+
+    .membership-welcome__photo{
+        height: 30%;
+        width: 100%;
+    
+
+        .membership-welcome__pic{
+
+        }
+    }
+    
+}
+
+@media #{$tablet}{
+
+    
+}
+
+
+
 .membership-break{
-    height: 40vh;
+    height: 30vh;
     width: 100vw;
-    background: yellow;
+    background: url(../img/fernview.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
 .membership-form__container{
-    height: 200vh;
+    height: 100vh;
     width: 100vw;
-    background: green;
     display: flex;
 
 
     .membership-form__right{
         height: 100%;
         width: 40%;
-        background: powderblue;
         display: flex;
         flex-wrap: wrap;
 
 
         .form-right__info{
-            height: 35%;
+            height: 40%;
             width: 100%;
-            background: red;
+            padding: 2rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -135,25 +164,35 @@
             text-align: center;
             
             .form-right__header{
-                font-size: 4rem;
+                font-size: 3.5rem;
                 font-family: 'Cinzel';
-                width: 80%;
+                width: 90%;
             }
 
             .form-right__paragraph{
                 font-size: 1.5rem;
                 font-family: 'Open sans', 'sans-serif';
-                width: 50%;
-                padding-top: 3rem;
+                width: 70%;
+                padding-top: 1rem;
             }
         
         }
 
 
         .form-right__photo{
-            height: 65%;
+            height: 60%;
             width: 100%;
-            background: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            .form-right__pic{
+                height: 100%;
+                width: 80%;
+                background: url(../img/contact.jpeg);
+
+            }
 
 
         }
@@ -162,22 +201,154 @@
     }
 }
 
+
+@media #{$mobile}{
+    .membership-form__right{
+        height: 40%;
+        width: 100%;
+    }
+    .membership-form__left{
+        height: 60%;
+        width: 100%;
+    }
+}
+
+
 .membership-form__left{
     height: 100%;
     width: 60%;
-    background: pink;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
     
     .membership-form__left-title{
         height: 2rem;
-        width: 25rem;
+        width: 27rem;
+        margin: 0.5rem;
     }
 
 
 }
 
+.membership-form__left-text{
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
+.membership-form__container-fillin{
+    height: 70%;
+    width: 53%;
+}
 .input-membership{
+    padding: 0.2rem;
+}
 
+label{
+    font-family: 'Open sans', 'sans-serif';   
+}
+
+.membership-form__left-radio{
+    margin-bottom: 1rem;
+
+}
+
+.input-membership__id{
+    padding-bottom: 1rem;
+}
+input[type=file]{
+    padding-top: 1rem;
+    font-size: 1rem;
+   
+}
+.payment{
+    height: 16rem;
+    width: 28rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+.payment-icons{
+    height: 2.5rem;
+    width: 30rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 1.5rem;
+}
+
+.payment-icons__img{
+    height: 100%;
+}
+
+
+.deets{
+    margin-top: 1.5rem;
+
+
+}
+
+.deets-two{
+    margin-bottom: 1.5rem;    
+}
+
+.membership-submit{
+    @include button-web;
+    font-size: 1rem;
+    width: 10rem;
+}
+
+.payment-details{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+    &__one{
+        width: 22rem;
+        padding: 0.5rem;
+
+    }
+
+    &__two{
+        width: 22rem;
+        padding: 0.5rem;
+        margin-top: 1rem;        
+    }
+}
+
+.payment-details__div-two{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+}
+
+.payment-details__three{
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    width: 10.5rem;
+}
+
+.payment-details__four{
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    width: 10.5rem;
 }
