@@ -39,47 +39,45 @@
     }
 
 
-.about-introduction__container{
+
+.about-introductions{
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 
-
-    .about-introduction__text{
+    &__text{
         height: 100%;
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 
-    .about-introduction__header{
-        font-family: 'Cinzel'; 
-        font-size: 4rem;  
-        text-align: center;
+    &__header{
+        padding-bottom: 2rem;
+        width: 70%;
     }
 
-
-    .about-introduction__paragraph{
-        font-family: 'Open Sans', sans-serif;
-        width: 50%; 
-        padding-top: 4rem;   
-        font-size: 1.5rem;  
-        text-align: center; 
+    &__paragraph{
+        width: 70%; 
     }
 
-    .about-introduction__photo{
+    &__photo{
         height: 100%;
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
 
-    .about-introduction-pic{
+    &__pic{
         height: 80%;
         width: 80%;
         background: url(../img/botanists.jpeg);
@@ -87,111 +85,130 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-}
 
+    @media #{$tablet}{
+        background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../img/botanists.jpeg");
+        margin-top: 1%;
+        height: 85vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
-// will not work without !important, something in code needs to be
-// fixed so that these media queries stop being unresponsive...
-@media #{$mobile}{
+        &__pic{
+            display: none;
+        }
 
-    .about-introduction__container{
-        height: 50vh;
-    }
-
-    .about-introduction__text{
-        height: 75% !important;
-        width: 100% !important;
-    } 
-    .about-introduction__photo{
-        height: 25% !important;
-        width: 100% !important;
-    }
-    .about-introduction__header{
-        width: 80%;
-        font-size: 2rem !important;
-        
-    }
-    .about-introduction__paragraph{
-        font-size: 1rem !important;
-        width: 75% !important;
-    }
+        &__photo{
+            display: none;
+        }
+        &__header{
+            padding-bottom: 2rem;
+            font-size: 3rem;
+            width: 90%;
+        }
     
-    .about-introduction-pic{
-        height: 100% !important;
-        width: 100% !important;
+        &__paragraph{
+            width: 100%; 
+            font-size: 1.3rem;
+        }
     }
 
+    @media #{$mobile}{
+        background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../img/botanists.jpeg");
+        margin-top: 1%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
-}
+        &__pic{
+            display: none;
+        }
 
-@media #{$tablet}{
-    .about-introduction__text{
-        height: 50% !important;
-        width: 100% !important;
-    } 
-    .about-introduction__photo{
-        height: 50% !important;
-        width: 100% !important;
-    }
-    .about-introduction__header{
-        width: 80%;
-
-    }
+        &__photo{
+            display: none;
+        }
+        &__header{
+            padding-bottom: 2rem;
+            font-size: 2rem;
+            width: 90%;
+        }
     
+        &__paragraph{
+            width: 100%; 
+            font-size: 1rem;
+        }
+    }
 }
+
+
 
 
 
 .values-section{
-    height: 10vh;
+    min-height: 10vh;
     width: 100vw;
     display: flex;
     position: relative;
     justify-content: center;  
     align-items: center;
+
+    @media #{$tablet}{
+        margin-top: 3rem; 
+
+    }
+
+    @media #{$mobile}{
+        margin-top: 9rem;
+    }
+
 }
 
-
-.values-header{
-    position: absolute;
-    bottom: 0;
-}
 
 .values{
-    font-family: 'Cinzel', serif;
-    font-size: 4rem;    
+    position: absolute;
+    bottom: 0;
+    
+    &-header{
+        font-family: 'Cinzel', serif;
+        font-size: 4rem;   
+    }
+
+    @media #{$mobile}{
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
 }
+
+
 
 
 .core-values{
-    height: 100vh;
+    min-height: 80vh;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(8, 1fr);
 
     @media #{$mobile}{
-        .core-values{
-            height: 140vh;
-            width: 100vw;
-            grid-template-columns: repeat(8, 1fr);
-            grid-template-rows: repeat(10, 1fr);
-        }
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        
     }
 
     @media #{$tablet}{
-        .core-values{
-            height: 130vh;
             grid-template-columns: repeat(8, 1fr);
-            grid-template-rows: repeat(9, 1fr);
-        }
+            grid-template-rows: repeat(8, 1fr);
+        
     }
 }
 
 .values-semiotic{
     height: 30%;
     border-radius: 360%;
-    }
+
+}
 
 
 .core-values__conservation{
@@ -205,22 +222,18 @@
     justify-content: space-evenly;
     text-align: center;
 
+    @media #{$mobile}{
+            grid-row: 1/2;
+            grid-column: 1/2;
+    }
 
+    @media #{$tablet}{
+            grid-row: 1/3;
+            grid-column: 1/12;
+    }
 
 }
-    @media #{$mobile}{
-        .core-values__conservation{
-            grid-row: 1/3;
-            grid-column: 1/12;
-    
-        }
-    }
-    @media #{$tablet}{
-        .core-values__conservation{
-            grid-row: 1/3;
-            grid-column: 1/12;
-        }
-    }
+
 
 
 .core-values__knowledge{
@@ -233,21 +246,21 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+    
+    @media #{$mobile}{
+            grid-row: 2/3;
+            grid-column: 1/2;
+    }
+
+    @media #{$tablet}{
+            grid-row: 3/6;
+            grid-column: 1/12;
+    }  
+
 }
 
-@media #{$mobile}{
-    .core-values__knowledge{
-        grid-row: 3/6;
-        grid-column: 1/12;
 
-    }
-}
-@media #{$tablet}{
-    .core-values__conservation{
-        grid-row: 3/6;
-        grid-column: 1/12;
-    }
-}
+
 
 
 
@@ -261,20 +274,22 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-}
-@media #{$mobile}{
-    .core-values__conservation{
-        grid-row: 6/9;
-        grid-column: 1/12;
 
-    }
+    @media #{$mobile}{
+            grid-row: 3/4;
+            grid-column: 1/2;
+
+        }
+    
+    @media #{$tablet}{
+            grid-row: 6/9;
+            grid-column: 1/12;
+        }
+    
+
+
 }
-@media #{$tablet}{
-    .core-values__conservation{
-        grid-row: 6/9;
-        grid-column: 1/12;
-    }
-}
+
 
 
 
@@ -284,14 +299,11 @@
     font-size: 3.5rem;
 
     @media #{$mobile}{
-        .core-value__header{
             font-size: 2rem !important;
-        }
     }
+
     @media #{$tablet}{
-        .core-value__header{
             font-size: 3rem;
-        }
     }
 
 }
@@ -300,274 +312,16 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     width: 75%;
-}
-
-
-/* .core-values__conservation{
-    grid-column: 2/5;
-    grid-row: 2/8;
-    background: rgb(250, 250, 250);
-    margin: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-@media #{$mobile}{
-    .core-values__conservation{
-        grid-row: 1/3;
-        grid-column: 1/8;
-
-    }
-}
-@media #{$tablet}{
-    .core-values__conservation{
-        grid-row: 1/3;
-        grid-column: 1/8;
-    }
-}
-
-.core-values__knowledge{
-    grid-row: 2/8;
-    grid-column: 5/8;
-    background: rgb(250, 250, 250);
-    margin: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
     @media #{$mobile}{
-        .core-values__knowledge{
-            grid-row: 3/5;
-            grid-column: 1/8;
-
-        }
+        font-size: 1rem !important;
     }
 
     @media #{$tablet}{
-        .core-values__knowledge{
-            grid-row: 3/5;
-            grid-column: 1/8;
-        }
+        font-size: 1.3rem;
     }
-
-    .offer-award{
-        grid-row: 2/8;
-        grid-column: 8/11;
-        background: rgb(250, 250, 250);
-        margin: 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-evenly;
-    }
-    
-        @media #{$mobile}{
-            .offer-award{
-                grid-column: 1/8;
-                grid-row: 5/7;
-            }
-        }
-        @media #{$tablet}{
-            .offer-award{
-                grid-column: 1/8;
-                grid-row: 5/7;
-            }
-        }
-    
-.values-semiotic{
-    height: 45%;
-    border-radius: 360%;
-    }
-    
-    
-    .core-value__header{
-        font-family: 'Cinzel', serif;
-        font-size: 3.5rem;
-     
-    
-    }
-    
-    .core-value__paragraph{
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.5rem;
-        width: 75%;
-        text-align: center;
-    
-    }
-
-    @media #{$mobile}{
-        .core-value__paragraph{
-            font-size: 1.5rem;
-        }
-    }
-    @media #{$tablet}{
-        .core-value__paragraph{
-            font-size: 1.2rem;
-        }
-    } */ 
-
-    
-/* .core-values{
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-
 }
 
-    @media #{$mobile}{
-        .core-values{
-            height: 140vh;
-            width: 100vw;
-            grid-template-columns: repeat(7, 1fr);
-            grid-template-rows: repeat(6, 1fr);
-        }
-    }
-
-    @media #{$tablet}{
-        .core-values{
-            height: 130vh;
-            grid-template-columns: repeat(7, 1fr);
-            grid-template-rows: repeat(6, 1fr);
-        }
-    }
-
-
-
-
-
-
-
-
-.core-values__conservation{
-    grid-column: 2/5;
-    grid-row: 2/8;
-    background: rgb(250, 250, 250);
-    margin: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-    @media #{$mobile}{
-        .core-values__conservation{
-            grid-row: 1/3;
-            grid-column: 1/8;
-
-        }
-    }
-    @media #{$tablet}{
-        .core-values__conservation{
-            grid-row: 1/3;
-            grid-column: 1/8;
-        }
-    }
-
-
-
-
-
-
-.core-values__knowledge{
-    grid-row: 2/8;
-    grid-column: 5/8;
-    background: rgb(250, 250, 250);
-    margin: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-    @media #{$mobile}{
-        .core-values__knowledge{
-            grid-row: 3/5;
-            grid-column: 1/8;
-
-        }
-    }
-
-    @media #{$tablet}{
-        .core-values__knowledge{
-            grid-row: 3/5;
-            grid-column: 1/8;
-        }
-    }
-
-.core-values__cultivation{
-    grid-row: 2/8;
-    grid-column: 8/11;
-    background: rgb(250, 250, 250);
-    margin: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-
-    @media #{$mobile}{
-        .core-values__cultivation{
-            grid-column: 1/8;
-            grid-row: 5/7;
-        }
-    }
-    @media #{$tablet}{
-        .core-values__cultivation{
-            grid-column: 1/8;
-            grid-row: 5/7;
-        }
-    }
-
-
-
-
-
-
-.offer-semiotic{
-height: 25%;
-border-radius: 360%;
-}
-    @media #{$mobile}{
-        .offer-semiotic{
-            height: 20%;
-        }
-    }
-
-.offer-header{
-    font-family: 'Cinzel', serif;
-    font-size: 3.5rem; 
-}
-    @media #{$mobile}{
-        .offer-header{
-            font-size: 2.5rem;
-        }
-    }
-
-.offer-paragraph{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    width: 75%;
-    text-align: center;
-}
-    @media #{$mobile}{
-        .offer-paragraph{
-            font-size: 1.2rem;
-        }
-    }
-    @media #{$tablet}{
-        .offer-paragraph{
-            font-size: 1.2rem;
-        }
-    }
- */
 
 
 
@@ -604,7 +358,7 @@ border-radius: 360%;
             width: 75%;
             color: white;
             padding-top: 3rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
 
 
         }
@@ -647,12 +401,12 @@ border-radius: 360%;
         }
 
         &-h1{
-            font-size: 4rem;
+            font-size: 3rem;
             width: 80%;
         }
 
         &-p{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
     
     }

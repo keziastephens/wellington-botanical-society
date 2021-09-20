@@ -1,7 +1,7 @@
 .membership-intro{
     height: 30vh;
     width: 100vw;
-    background: grey;
+    background: url(../img/overlay/members-overlay.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,14 +39,14 @@
 }
 
 .membership-welcome__container{
-    height: 70vh;
+    min-height: 90vh;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
 
 
     .membership-welcome__info{
-        height: 100%;
+        min-height: 100%;
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -81,7 +81,7 @@
     }
 
     .membership-welcome__photo{
-        height: 100%;
+        min-height: 100%;
         width: 50%;
         display: flex;
         justify-content: center;
@@ -89,7 +89,7 @@
 
 
         .membership-welcome__pic{
-            height: 80%;
+            min-height: 80%;
             width: 80%;
             background: url(../img/hiking-people__two.jpeg);
             background-position: center;
@@ -102,23 +102,41 @@
 @media #{$mobile}{
 
     .membership-welcome__container{
+        min-height: 70vh;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+   
     }
 
     .membership-welcome__info{
-        height: 70%;
+        height: 100%;
         width: 100%;
     }
 
     .membership-welcome__photo{
-        height: 30%;
-        width: 100%;
+        display: none;
     
 
         .membership-welcome__pic{
-
+            display: none;
         }
+    }
+
+    .membership-welcome__header{
+        font-size: 2rem !important;
+        font-family: 'Cinzel';
+        width: 100%;
+        text-align: center;
+    }
+
+    .membership-welcome__paragraph{
+        font-size: 1rem !important; 
+        font-family: 'Open sans', 'sans-serif';
+        width: 100% !important;
+        padding-top: 2rem;
     }
     
 }
@@ -139,18 +157,33 @@
     background-repeat: no-repeat;
 }
 
+@media #{$tablet}{
+    .membership-break{
+        height: 25vh;
+    }
+    
+}
+
+@media #{$mobile}{
+    .membership-break{
+        height: 20vh;
+    }   
+}
+
 
 .membership-form__container{
-    height: 100vh;
+    height: 140vh;
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;    
 
 
     .membership-form__right{
         height: 100%;
         width: 40%;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+
 
 
         .form-right__info{
@@ -191,6 +224,9 @@
                 height: 100%;
                 width: 80%;
                 background: url(../img/contact.jpeg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
 
             }
 
@@ -203,13 +239,35 @@
 
 
 @media #{$mobile}{
+    .membership-form__container{
+        min-height: 120vh;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    
+
     .membership-form__right{
-        height: 40%;
+        min-height: 40%;
         width: 100%;
     }
     .membership-form__left{
-        height: 60%;
+        min-height: 60%;
         width: 100%;
+
+    }
+    .form-right__header{
+        font-size: 2rem !important;
+        font-family: 'Cinzel';
+        width: 90%;
+    }
+
+    .form-right__paragraph{
+        font-size: 1rem !important;
+        font-family: 'Open sans', 'sans-serif';
+        width: 70%;
+        padding-top: 1rem;
+
     }
 }
 

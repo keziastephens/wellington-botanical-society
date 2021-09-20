@@ -103,13 +103,15 @@
 
         &__header{
             font-size: 3rem;
-            font-family: 'Cinzel';    
+            font-family: 'Cinzel'; 
+            padding-top: 3rem;   
     
         }
     
         &__paragraph{
             font-size: 1rem;
             font-family: 'Open sans', 'sans-serif';
+            padding-bottom: 2rem;
         }
     }
 }
@@ -134,13 +136,15 @@
         &__header{
             
             font-size: 3.5rem;
-            font-family: 'Cinzel';    
+            font-family: 'Cinzel';   
+            padding-top: 3rem; 
     
         }
     
         &__paragraph{
             font-size: 1.5rem;
             font-family: 'Open sans', 'sans-serif';
+            padding-bottom: 2rem;
         }
     }
 }
@@ -156,7 +160,7 @@
 .contact-form{
     padding: 0.5rem;
     height: 4rem;
-    width: 50rem;
+    width: 40rem;
     
     &__message{
         font-family: 'Open sans', 'sans-serif';
@@ -167,6 +171,7 @@
     &__button{
         @include button-web;
         margin-top: 2rem;
+        margin-bottom: 3rem;
 
 
     }
