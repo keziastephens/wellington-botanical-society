@@ -48,7 +48,7 @@
     min-height: 100vh;
     width: 100vw;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     
 
 
@@ -75,7 +75,7 @@
 
     @media #{$mobile}{
             
-        height: 120vh;
+        height: 100vh;
         
             &__nxt{
                 min-height: 50%;
@@ -90,7 +90,7 @@
     }
     @media #{$tablet}{
             
-        height: 120vh;
+        height: 100vh;
         
             &__nxt{
                 min-height: 50%;
@@ -238,7 +238,104 @@
 .programme{
     height: 100vh;
     width: 100vw;
+    display: flex;
+
+    &-info{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &-h1{
+
+    }
+
+    &-p{
+        width: 70%;
+        padding-top: 3rem;
+        padding-bottom: 3rem
+    }
+
+    &-btn{
+        @include button-web;
+    }
+
+    &-btn:hover{
+        background: black;
+        transition: 0.2s all ease;
+    }
+
 }
+
+
+.year-grid{
+    height: 100%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    &__one{
+        grid-row: 2/4;
+        grid-column: 2/10;
+        background: url(../img/pukatea_2012.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    &__two{
+        grid-row: 4/6;
+        grid-column: 2/6;
+        background: url(../img/Peraxilla_colensoi_2011.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    &__three{
+        grid-row: 6/8;
+        grid-column: 2/6;
+        background: url(../img/QEII_2010.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    &__four{
+        grid-row: 4/8;
+        grid-column: 6/10;
+        background: url(../img/woodburn_mamuku_2011.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+    }
+
+    &__five{
+        grid-row: 8/10;
+        grid-column: 2/10;
+        background: url(../img/Eglinton_Valley_2011.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+        margin-top: 0.5rem;
+    }
+
+}
+
 
 
 
@@ -265,7 +362,7 @@
     }
 
     &__h1{
-        font-size: 5.5;
+        font-size: 5.5rem;
         color: white;
     }
 
@@ -280,5 +377,48 @@
     &__btn{
         @include button-web;
     }
+
+    &__btn:hover{
+        background: black;
+        transition: 0.2s all ease;
+    }
+
+
+    @media #{$tablet}{
+        height: 80vh;
+
+        &__innard{
+            height: 85%;
+            width: 85%;
+        }
+    
+        &__h1{
+            font-size: 4rem;
+        }
+
+        &__p{
+            font-size: 1.3rem;
+        }
+    
+    
+    }
+
+    @media #{$mobile}{
+        height: 60vh;
+
+        &__innard{
+            height: 90%;
+            width: 90%;
+        }
+    
+        &__h1{
+            font-size: 2rem;
+        }
+
+        &__p{
+            font-size: 1rem;
+        }
+    }
+
 
 }
