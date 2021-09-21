@@ -14,29 +14,29 @@
         font-family: 'Cinzel';
         color: white;
     }
-}
 
     @media #{$mobile}{
-        .about-intro{
-            height: 20vh;
+        height: 20vh;
 
-            &__header{
-                font-size: 3rem;
-            }
+        &__header{
+            font-size: 3rem;          
         }
         
     }
 
     @media #{$tablet}{
-        .about-intro{
-            height: 25vh;
+        height: 25vh;
 
-            &__header{
-                font-size: 4rem;
-            }
+        &__header{
+            font-size: 4rem;
         }
         
     }
+
+
+}
+
+
 
 
 
@@ -159,7 +159,7 @@
     }
 
     @media #{$mobile}{
-        margin-top: 9rem;
+        margin-top: 2rem;
     }
 
 }
@@ -177,11 +177,20 @@
     @media #{$mobile}{
         text-align: center;
         padding-bottom: 1rem;
+
+        &-header{
+            font-size: 2.5rem;
+        }
     }
 
 }
 
 
+.values-semiotic{
+    height: 30%;
+    border-radius: 360%;
+
+}
 
 
 .core-values{
@@ -191,6 +200,10 @@
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(8, 1fr);
 
+
+
+
+    
     @media #{$mobile}{
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(3, 1fr);
@@ -202,15 +215,13 @@
             grid-template-rows: repeat(8, 1fr);
         
     }
-}
-
-.values-semiotic{
-    height: 30%;
-    border-radius: 360%;
 
 }
 
 
+//when individual core values are attempted to be nested,
+//it becomes unresponsive. a later portfolio fix is to go 
+//through code and figure out the issue.
 .core-values__conservation{
     grid-column: 2/5;
     grid-row: 2/8;
@@ -235,7 +246,9 @@
 }
 
 
-
+//when individual core values are attempted to be nested,
+//it becomes unresponsive. a later portfolio fix is to go 
+//through code and figure out the issue.
 .core-values__knowledge{
     grid-column: 5/8;
     grid-row: 2/8;
@@ -263,7 +276,9 @@
 
 
 
-
+//when individual core values are attempted to be nested,
+//it becomes unresponsive. a later portfolio fix is to go 
+//through code and figure out the issue.
 .core-values__cultivation{
     grid-column: 8/11;
     grid-row: 2/8;
@@ -326,7 +341,7 @@
 
 
  .pfp{
-     height: 70vh;
+     height: 85vh;
      width: 100vw;
      background: url(../img/peopleforplants.jpeg);
      background-repeat: none;
@@ -363,14 +378,10 @@
 
         }
 
+    @media #{$mobile}{
 
-    }
-    
-
-@media #{$mobile}{
-    .pfp{
         height: 50vh;
- 
+    
         &-overlay{
             width: 90%;
             height: 90%;
@@ -386,15 +397,12 @@
         &-p{
             font-size: 1rem;
         }
- 
+  
     }
 
-}
-
-@media #{$tablet}{
-    .pfp{
+    @media #{$tablet}{
         height: 60vh;
-    
+        
         &-overlay{
             width: 85%;
             height: 85%;
@@ -408,10 +416,15 @@
         &-p{
             font-size: 1.3rem;
         }
-    
-    }
+        
+        
+
+    } 
 
 }
+    
+
+
 
 .faq{
     min-height: 100vh;
@@ -464,78 +477,235 @@
         color: rgb(83, 83, 255);
     }
 
-
-}
-
-@media #{$mobile}{
-    
-    .faq{
-        min-height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("../img/flowerart.jpeg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-
-    
-    
-        &-img__container{
-            display: none;
-        }
-    
-        &-img{
-            min-height: 95%;
-            width: 90%;
-            background: url(../img/flowerart.jpeg);
-        }
-    
-        &-info{
-            min-height: 100%;
-            width: 100%;
-            padding: 3rem;
+    @media #{$mobile}{
+        
+            min-height: 100vh;
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             margin: auto;
-    
-        }
-        
-        &-header{
-            font-size: 5rem;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid black;
-            width: 80%;
-        }
+            background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("../img/flowerart.jpeg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
 
-        &-questions{
-            font-size: 1.2rem;
-        }
         
-        &-answers{
-            color: rgb(134, 134, 134);
-            font-size: 1rem;
-            width: 85%;
-            padding: 1rem;
-            padding-bottom: 3rem;
-        }
-        &-link{
-            color: rgb(83, 83, 255);
-        }
-    
-    
+        
+            &-img__container{
+                display: none;
+            }
+        
+            &-img{
+                min-height: 90%;
+                width: 90%;
+                background: url(../img/flowerart.jpeg);
+            }
+        
+            &-info{
+                min-height: 100%;
+                width: 100%;
+                padding: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: auto;
+        
+            }
+            
+            &-header{
+                font-size: 5rem;
+                margin-bottom: 3rem;
+                padding-bottom: 2rem;
+                border-bottom: 1px solid black;
+                width: 80%;
+            }
+
+            &-questions{
+                font-size: 1.2rem;
+            }
+            
+            &-answers{
+                color: rgb(134, 134, 134);
+                font-size: 1rem;
+                width: 85%;
+                padding: 1rem;
+                padding-bottom: 3rem;
+            }
+            &-link{
+                color: rgb(83, 83, 255);
+            }
+        
+        
+        
+
+    }
+}
+
+
+
+
+
+.action-container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    &__one{
+        grid-column: 1/2;
+        grid-row: 1/4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
     }
 
+    &__background-one{
+        background: url(../img/overlay/contact-overlay.jpg);
+        grid-column: 1/2;
+        grid-row: 1/4;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 1%;
+        margin-bottom: 1%;
+
+    }
+
+    &__two{
+        grid-column: 2/3;
+        grid-row: 1/4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    &__background-two{
+        grid-column: 2/3;
+        grid-row: 1/4;
+        background: url(../img/overlay/cute-plant-overlay.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 1%;
+        margin-bottom: 1%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    &__three{
+        grid-column: 3/4;
+        grid-row: 1/4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    &__background-three{
+        grid-column: 3/4;
+        grid-row: 1/4;
+        background: url(../img/overlay/waterfall-overlay.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 1%;
+        margin-bottom: 1%;
+        margin-right: 1%;
+    }
+
+    &__text{
+        @include header-style;
+        color: white;
+        width: 60%;
+
+    }
+
+    @media #{$mobile}{
+        &__one{
+            grid-row: 1/2;
+            grid-column: 1/4;
+        }
+
+        &__background-one{
+            grid-row: 1/2;
+            grid-column: 1/4;
+        }
+
+        &__two{
+            grid-row: 2/3;
+            grid-column: 1/4;
+        }
+        &__background-two{
+            grid-row: 2/3;
+            grid-column: 1/4;
+        }
+        &__three{
+            grid-row: 3/4;
+            grid-column: 1/4;
+        }
+        &__background-three{
+            grid-row: 3/4;
+            grid-column: 1/4;
+        }
+        &__text{
+            width: 100%;
+            font-size: 3rem;
+        }
+    }
+
+    @media #{$tablet}{
+        &__one{
+            grid-row: 1/2;
+            grid-column: 1/4;
+        }
+
+        &__background-one{
+            grid-row: 1/2;
+            grid-column: 1/4;
+        }
+
+        &__two{
+            grid-row: 2/3;
+            grid-column: 1/4;
+        }
+        &__background-two{
+            grid-row: 2/3;
+            grid-column: 1/4;
+        }
+        &__three{
+            grid-row: 3/4;
+            grid-column: 1/4;
+        }
+        &__background-three{
+            grid-row: 3/4;
+            grid-column: 1/4;
+        }
+        &__text{
+            width: 100%;
+        }
+    }
+
+
+
 }
 
-
-@media #{$tablet}{
-
-    
-}
