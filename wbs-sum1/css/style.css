@@ -672,60 +672,87 @@ body {
         width: 80% !important;
         font-size: 1.3rem !important; } }
 
-.footer-section {
-  min-height: 44vh;
-  width: 100vw;
-  background: #333; }
-
-@media (max-width: 600px) {
-  min-height: 55vh; }
-@media (min-width: 601px) and (max-width: 1023px) {
-  min-height: 50vh; }
-.footer {
+footer {
+  min-height: 50vh;
+  background: #333;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; }
-
-.footer-left {
-  position: relative; }
-
-.footer-email {
-  padding-top: 2rem; }
-
-.footer-email__paragraph {
-  padding-left: 2rem;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  font-size: 1.5rem; }
-
-.footer-pobox {
-  position: absolute;
-  bottom: 0;
-  left: 0; }
-
-.pobox {
-  color: white;
-  font-size: 1.5rem;
-  padding-left: 2rem;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 4rem; }
-
-.contact-semiotic {
-  height: 2rem; }
-
-.footer-right__logo {
-  height: 12rem;
-  margin: 2rem; }
-
-.footer-nav__list {
-  text-align: right;
-  list-style: none;
-  color: white;
-  padding-right: 5rem; }
-
-.footer-nav__list-items {
-  padding-top: 1.8rem;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem; }
+  footer t
+  .footer-left {
+    min-height: 100%;
+    width: 50%;
+    position: relative; }
+  footer .footer-email {
+    min-height: 50%;
+    width: 100%;
+    display: flex; }
+  footer .footer-semiotic {
+    height: 2rem;
+    margin-left: 3rem;
+    margin-top: 3rem; }
+  footer .footer-paragraph {
+    color: white;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    font-size: 1.2rem; }
+  footer .footer-pobox {
+    position: absolute;
+    padding: 3rem;
+    width: 100%;
+    color: white;
+    text-align: bottom;
+    margin-top: 1.5rem; }
+  footer .pobox {
+    line-height: 4rem; }
+  footer .footer-right {
+    min-height: 100%;
+    width: 50%; }
+  footer .footer-nav {
+    float: right; }
+  footer .footer-logo {
+    height: 12rem;
+    margin: 2rem;
+    justify-content: flex-end; }
+  footer .footer-nav__list {
+    text-align: right;
+    list-style: none;
+    color: white;
+    padding-right: 5rem; }
+  footer .footer-nav__list-items {
+    padding-bottom: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem; }
+  @media (max-width: 600px) {
+    footer {
+      min-height: 70vh;
+      display: flex; }
+      footer .footer-left {
+        height: 10%;
+        width: 100%; }
+      footer .footer-email {
+        height: 10%;
+        width: 100%; }
+      footer .footer-pobox {
+        height: 10%;
+        width: 100%; }
+      footer .pobox {
+        line-height: 2rem; }
+      footer .footer-right {
+        height: 50%;
+        width: 100%; }
+      footer .footer-logo {
+        height: 8rem;
+        margin-top: 15rem; } }
+  @media (min-width: 601px) and (max-width: 1023px) {
+    footer {
+      height: 50vh; }
+      footer .footer-left {
+        height: 100%;
+        width: 50%; }
+      footer .footer-logo {
+        height: 9rem;
+        margin-bottom: 4.5rem; } }
 
 .contact-intro {
   height: 30vh;
@@ -2305,10 +2332,10 @@ body {
     width: 60%;
     padding-top: 2rem; }
   .membership-welcome__container .membership-welcome__signup {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Open sans', 'sans-serif'; }
   .membership-welcome__container .membership-arrow {
-    height: 20%; }
+    height: 10%; }
   .membership-welcome__container .membership-welcome__photo {
     min-height: 100%;
     width: 50%;
